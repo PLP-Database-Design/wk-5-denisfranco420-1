@@ -38,26 +38,44 @@
 ## Test Plan
 
 ### Objectives
-
+Verify that the product filtering system functions correctly based on user input
+Ensure that UI states transition properly (Results, No Results, Reset).
+Identify and report functional defects impacting user experience or correctness
 - 
 
 ### Scope
 
 **In Scope:**
-- 
+- Input validation behavior
+- UI response/messages for valid and invalid searches
+- Reset/Clear functionality
 
 **Out of Scope:**
-- 
+- System behavior across identified states
+- Backend database performance
+- Mobile responsiveness
+- Compatibility testing across different browsers
 
 ### Tools & Resources
 
-- 
+- Test data sheet
+- Browser (Chrome / Firefox)
+- Manual Black-box testing techniques:
+    - Equivalence Partitioning
+    - Boundary Value Analysis
+    - Decision Table Testing
+- Defect tracking sheet
+State Transition Testing
 
 ### Schedule
 
 | Phase | Planned Duration | Actual Duration | Status |
 |-------|------------------|-----------------|--------|
-| | | | |
+|Test Planning |1 Day | 8 hours| completed|
+|Risk analyst | 1 day| | pending|
+| Test Executor| 2 day | | pending|
+| Defect Reporting| Continuous during execution| |Pending |
+|Final Review & Closure | 1 day| | pending|
 
 ## Risk Analysis
 
@@ -123,7 +141,7 @@
 
 | Name | Role | Initials | Date |
 |------|------|-----------|------|
-| | Test Manager | | |
+|Denis Kyalo | Test Manager | | 24 10 2025|
 | | Risk Analyst | | |
 | | Test Executor | | |
 
