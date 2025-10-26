@@ -31,17 +31,17 @@
 
 | Feature | Description | Risk Category |
 |---------|-------------|---------------|
-| Reset Game | Clears score and progress instantly | |
-| Leaderboard | Stores top 3 scores in localStorage | |
-| Bonus Round | Every 3 puzzles → doubles score | |
+| Reset Game | Clears score and progress instantly |high |
+| Leaderboard | Stores top 3 scores in localStorage | medium|
+| Bonus Round | Every 3 puzzles → doubles score |high |
 
 ## Test Plan
 
 ### Objectives
-Verify that the product filtering system functions correctly based on user input
-Ensure that UI states transition properly (Results, No Results, Reset).
-Identify and report functional defects impacting user experience or correctness
-- 
+- Verify that the product filtering system functions correctly based on user input
+- Ensure that UI states transition properly (Results, No Results, Reset).
+- Identify and report functional defects impacting user experience or correctness
+
 
 ### Scope
 
@@ -142,8 +142,8 @@ State Transition Testing
 | Name | Role | Initials | Date |
 |------|------|-----------|------|
 |Denis Kyalo | Test Manager | | 24 10 2025|
-| | Risk Analyst | | |
-| | Test Executor | | |
+|Bramwel Mutugi | Risk Analyst | | |
+| Gideon Bethuel| Test Executor | | |
 
 ## Overall Summary
 
