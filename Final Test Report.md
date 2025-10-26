@@ -102,8 +102,7 @@ State Transition Testing
 | TC-006 | Bonus Round | After 3 solves, score doubles | Works correctly | ✅ Pass |  |
 | TC-007 | Reset Game | Resets score, solved count, and clears word | Works as expected | ✅ Pass |  |
 | TC-008 | Leaderboard | Saves top 3 scores in browser | Works as expected | ✅ Pass |  |
-| TC-009 | Responsive Layout | Adjusts layout on smaller screens | Works as expected | ✅ Pass |  |
-| TC-010 | Accessibility | ARIA updates read correctly by screen reader | Works as expected | ✅ Pass |  |
+
 
 
 ## Defects
