@@ -150,8 +150,8 @@ State Transition Testing
 
 | Name | Role | Initials | Date |
 |------|------|-----------|------|
-|Denis Kyalo | Test Manager | | 24 10 2025|
-| | Risk Analyst | | |
+| Denis Kyalo | Test Manager | | 24 10 2025|
+| Bramwel Mutugi | Risk Analyst | | |
 | Gideon Bethwel| Test Executor | |26 10 2025 |
 
 ## Overall Summary
