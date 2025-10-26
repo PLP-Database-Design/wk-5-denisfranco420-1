@@ -13,7 +13,7 @@
 |------|------|------------------|
 | Test Manager | | Planning, scheduling, coordination, metric tracking |
 | Risk Analyst | | Risk identification, prioritization, test design linkage |
-| Test Executor | | Execution, evidence capture, defect logging |
+| Test Executor |gideon bethuel | Execution, evidence capture, defect logging |
 
 ## Group Rules
 
@@ -92,9 +92,19 @@ State Transition Testing
 
 ## Test Cases
 
-| ID | Feature | Objective | Expected Result | Actual Result | Status | Risk Link |
-|----|---------|-----------|----------------|---------------|--------|-----------|
-| | | | | | | |
+| **Test ID** | **Feature / Functionality** | **Expected Result** | **Actual Result** | **Status (Pass/Fail)** | **Remarks /  |
+|--------------|-----------------------------|----------------------|--------------------|-------------------------|---------------------------|
+| TC-001 | Page Load | Game loads correctly, all UI elements visible | Works as expected | ✅ Pass |  |
+| TC-002 | New Puzzle | “New Puzzle” button changes scrambled word | Works as expected | ✅ Pass |  |
+| TC-003 | Submit Guess (Correct) | Shows “Correct! +10 points” and updates score | Works as expected | ✅ Pass |  |
+| TC-004 | Submit Guess (Incorrect) | Shows “Incorrect, try again!” | Works as expected | ✅ Pass |  |
+| TC-005 | Hint Use | Deducts 2 points and displays hint | works as expected | ☐ Pass / ☐ Fail |  |
+| TC-006 | Bonus Round | After 3 solves, score doubles | Works correctly | ✅ Pass |  |
+| TC-007 | Reset Game | Resets score, solved count, and clears word | Works as expected | ✅ Pass |  |
+| TC-008 | Leaderboard | Saves top 3 scores in browser | Works as expected | ✅ Pass |  |
+| TC-009 | Responsive Layout | Adjusts layout on smaller screens | Works as expected | ✅ Pass |  |
+| TC-010 | Accessibility | ARIA updates read correctly by screen reader | Works as expected | ✅ Pass |  |
+
 
 ## Defects
 
