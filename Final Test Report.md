@@ -91,9 +91,24 @@ State Transition Testing
 | R6 | Message Feedback | Success/failure messages may disappear too quickly or fail to appear under invalid states. | Medium | Medium | Medium | Observe #message updates for timing, clarity, and persistence across all user actions. |
 
 ### Risk Coverage
+| **Risk ID** | **Covered by Test Case(s)** | **Risk Priority** | **Coverage Status** |
+| ----------- | --------------------------- | ----------------- | ------------------- |
+| R1          | TC-003, TC-006              | High              | ✅ Covered           |
+| R2          | TC-008                      | High              | ✅ Covered           |
+| R3          | TC-007                      | Medium            | ✅ Covered           |
+| R4          | TC-005                      | High              | ✅ Covered           |
+| R5          | TC-004                      | Medium            | ✅ Covered           |
+| R6          | TC-001, TC-002              | Medium            | ✅ Covered           |
 
-- Tested Risks Percent: 
-- Untested Risks Percent: 
+- Tested Risks: 6
+- Tested Risks Percent: 100%
+- Untested Risks Percent: 0%
+
+### Risk Summary 
+
+As the Risk Analyst, I identified six functional and usability risks centered on logic errors, data persistence, and state control within Word Puzzle Game Plus. The highest risk features Bonus Round, Hint deduction, and Leaderboard storage were given top test priority.
+Mitigation involved black box testing through boundary value analysis, decision table testing, and state transition checks to ensure data integrity and consistent UI behavior.
+Overall, all identified risks were tested and validated, achieving 100% risk coverage with no critical untested areas.
 
 ## Test Cases
 
@@ -161,7 +176,7 @@ State Transition Testing
 | Name | Role | Initials | Date |
 |------|------|-----------|------|
 | Denis Kyalo | Test Manager | | 24 10 2025|
-| Bramwel Mutugi | Risk Analyst | | 26 10 2025 |
+| Bramwel Mutugi | Risk Analyst |BM| 26 10 2025 |
 | Gideon Bethwel| Test Executor | |26 10 2025 |
 
 ## Overall Summary
