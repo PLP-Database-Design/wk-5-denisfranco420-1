@@ -11,7 +11,7 @@
 
 | Role | Name | Responsibilities |
 |------|------|------------------|
-| Test Manager | | Planning, scheduling, coordination, metric tracking |
+| Test Manager | Denis Kyalo | Planning, scheduling, coordination, metric tracking |
 | Risk Analyst | Bramwel Mutugi | Risk identification, prioritization, test design linkage |
 | Test Executor | Gideon Bethuel | Execution, evidence capture, defect logging |
 
@@ -72,7 +72,7 @@ State Transition Testing
 | Phase | Planned Duration | Actual Duration | Status |
 |-------|------------------|-----------------|--------|
 |Test Planning |1 Day | 8 hours| completed|
-|Risk analyst | 1 day| | pending|
+|Risk analyst | 1 day| 5 hours | pending|
 | Test Executor| 2 day | | pending|
 | Defect Reporting| Continuous during execution| |Pending |
 |Final Review & Closure | 1 day| | pending|
