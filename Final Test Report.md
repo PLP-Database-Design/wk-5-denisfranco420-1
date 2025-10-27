@@ -31,17 +31,17 @@
 
 | Feature | Description | Risk Category |
 |---------|-------------|---------------|
-| Reset Game | Clears score and progress instantly | |
-| Leaderboard | Stores top 3 scores in localStorage | |
-| Bonus Round | Every 3 puzzles → doubles score | |
+| Reset Game | Clears score and progress instantly |High |
+| Leaderboard | Stores top 3 scores in localStorage |Medium |
+| Bonus Round | Every 3 puzzles → doubles score |High |
 
 ## Test Plan
 
 ### Objectives
-Verify that the product filtering system functions correctly based on user input
-Ensure that UI states transition properly (Results, No Results, Reset).
-Identify and report functional defects impacting user experience or correctness
-- 
+- Verify that the product filtering system functions correctly based on user input
+- Ensure that UI states transition properly (Results, No Results, Reset).
+- Identify and report functional defects impacting user experience or correctness
+  
 
 ### Scope
 
@@ -73,8 +73,8 @@ State Transition Testing
 |-------|------------------|-----------------|--------|
 |Test Planning |1 Day | 8 hours| completed|
 |Risk analyst | 1 day| 5 hours | pending|
-| Test Executor| 2 day | | pending|
-| Defect Reporting| Continuous during execution| |Pending |
+| Test Executor| 2 day | | in progress|
+| Defect Reporting| Continuous during execution| |In progress|
 |Final Review & Closure | 1 day| | pending|
 
 ## Risk Analysis
