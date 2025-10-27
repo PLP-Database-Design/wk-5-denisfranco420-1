@@ -12,8 +12,8 @@
 | Role | Name | Responsibilities |
 |------|------|------------------|
 | Test Manager | | Planning, scheduling, coordination, metric tracking |
-| Risk Analyst | | Risk identification, prioritization, test design linkage |
-| Test Executor |gideon bethuel | Execution, evidence capture, defect logging |
+| Risk Analyst | Bramwel Mutugi | Risk identification, prioritization, test design linkage |
+| Test Executor | Gideon Bethuel | Execution, evidence capture, defect logging |
 
 ## Group Rules
 
