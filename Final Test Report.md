@@ -133,17 +133,19 @@ State Transition Testing
 |Test Planning |Approved Test Plan |Completed on time|None |Test manager |
 |Risk Analyst |Risk Analysis | Minor adjustments made|+1 extra day |Risk Analyst |
 |Test Execution | Test Results, Defect Reports| |defects pending |Test Executor |
-| | | | | |
+|Test Closure |Test Summary Report | in progress |none |All Members |
 
 **Progress Tracking Method:**  
+- Daily defect reporting and dashboard updates
+- Status tracked using GitHub Issues and Project Board
 **Change Control Notes:**
 
 ## Lessons Learned
 
-- Most Defect Prone Feature: 
-- Risk Analysis Impact: 
-- Team Communication Effectiveness: 
-- Improvements for Next Cycle: 
+- Most Defect Prone Feature: Filter logic caused unexpected “No Results” state
+- Risk Analysis Impact: Early risk assessment helped identify missing validation
+- Team Communication Effectiveness: Good collaboration through GitHub comments and assignments
+- Improvements for Next Cycle: Automate high-priority test cases and perform earlier usability testing
 
 ## Attachments
 
