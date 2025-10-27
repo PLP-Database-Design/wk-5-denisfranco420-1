@@ -83,7 +83,12 @@ State Transition Testing
 
 | ID | Feature | Risk Description | Likelihood | Impact | Priority | Mitigation Strategy |
 |----|---------|------------------|------------|--------|----------|---------------------|
-| | | | | | | |
+| R1 | Bonus Round | Bonus round logic may double score too early or fail to trigger after every 3 solves. | Medium | High | High | Verify score updates after every 3 puzzles using boundary test data. Retest with consistent sequences. |
+| R2 | Leaderboard | localStorage may fail to persist or correctly sort top 3 scores. | High | Medium | High | Conduct multiple rounds of scoring; clear cache and revalidate persistence order. |
+| R3 | Reset Game | Reset may not clear hints, scrambled words, or state counters completely. | Medium | Medium | Medium | Observe UI and variables post-reset; confirm full state reinitialization. |
+| R4 | Hint Function | Hint may not deduct 2 points immediately or may allow multiple uses per puzzle. | Medium | High | High | Test hint logic before and after use; confirm deduction and disable repeat hints. |
+| R5 | Input Validation | Blank, mixed-case, or special character inputs may bypass validation or cause unhandled messages. | High | low | Medium | Apply boundary and equivalence tests with empty, numeric, and special-character inputs. |
+| R6 | Message Feedback | Success/failure messages may disappear too quickly or fail to appear under invalid states. | Medium | Medium | Medium | Observe #message updates for timing, clarity, and persistence across all user actions. |
 
 ### Risk Coverage
 
