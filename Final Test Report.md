@@ -72,7 +72,7 @@ State Transition Testing
 | Phase | Planned Duration | Actual Duration | Status |
 |-------|------------------|-----------------|--------|
 |Test Planning |1 Day | 8 hours| completed|
-|Risk analyst | 1 day| 5 hours | In progress |
+|Risk analyst | 1 day| 5 hours | Completed |
 | Test Executor| 2 day | | in progress|
 | Defect Reporting| Continuous during execution| |In progress|
 |Final Review & Closure | 1 day| | pending|
