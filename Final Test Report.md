@@ -130,6 +130,9 @@ State Transition Testing
 
 | Phase | Deliverable | Actual Output | Variance | Owner |
 |-------|-------------|---------------|----------|-------|
+|Test Planning |Approved Test Plan |Completed on time|None |Test manager |
+|Risk Analyst |Risk Analysis | Minor adjustments made|+1 extra day |Risk Analyst |
+|Test Execution | Test Results, Defect Reports| |defects pending |Test Executor |
 | | | | | |
 
 **Progress Tracking Method:**  
