@@ -163,4 +163,4 @@ State Transition Testing
 
 **Statement:** 
 
-**Test Status:** ☐ Completed / ☐ In Progress / ☐ Deferred
+**Test Status:** ☐ In Progress
