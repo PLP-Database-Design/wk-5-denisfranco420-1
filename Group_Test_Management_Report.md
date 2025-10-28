@@ -77,9 +77,9 @@ Identify and report functional defects impacting user experience or correctness
 | ---------------------- | --------------------------- | --------------- | ----------- |
 | Test Planning          | 1 Day                       | 8 hours         | completed   |
 | Risk analyst           | 1 day                       | 5 hours         | Completed   |
-| Test Executor          | 2 day                       |                 | in progress |
-| Defect Reporting       | Continuous during execution |                 | In progress |
-| Final Review & Closure | 1 day                       |                 | pending     |
+| Test Executor          | 2 day                       | 16 hours        | Completed   |
+| Defect Reporting       | Continuous during execution |                 | Completed   |
+| Final Review & Closure | 1 day                       |                 | Completed   |
 
 ## Risk Analysis
 
@@ -180,8 +180,8 @@ Overall, all identified risks were tested and validated, achieving 100% risk cov
 | Name        | Role          | Initials | Date       |
 | ----------- | ------------- | -------- | ---------- |
 | Denis Kyalo | Test Manager  |          | 24 10 2025 |
-|             | Risk Analyst  |          |            |
-|             | Test Executor |          |            |
+| Bramwel Mutugi | Risk Analyst  |  BM        | 26th Oct 2025       |
+| Gideon Bethuel  | Test Executor | GB       | 27th Oct 2025      |
 
 ## Overall Summary
 
