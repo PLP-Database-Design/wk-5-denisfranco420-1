@@ -9,11 +9,11 @@
 
 ## Team Information
 
-| Role | Name | Responsibilities |
-|------|------|------------------|
-| Test Manager | Denis Kyalo | Planning, scheduling, coordination, metric tracking |
-| Risk Analyst | Bramwel Mutugi | Risk identification, prioritization, test design linkage |
-| Test Executor | Gideon Bethuel | Execution, evidence capture, defect logging |
+| Role          | Name           | Responsibilities                                         |
+| ------------- | -------------- | -------------------------------------------------------- |
+| Test Manager  | Denis Kyalo    | Planning, scheduling, coordination, metric tracking      |
+| Risk Analyst  | Bramwel Mutugi | Risk identification, prioritization, test design linkage |
+| Test Executor | Gideon Bethuel | Execution, evidence capture, defect logging              |
 
 ## Group Rules
 
@@ -29,28 +29,32 @@
 
 ### Features Under Test
 
-| Feature | Description | Risk Category |
-|---------|-------------|---------------|
-| Reset Game | Clears score and progress instantly |High |
-| Leaderboard | Stores top 3 scores in localStorage |Medium |
-| Bonus Round | Every 3 puzzles → doubles score |High |
+| Feature     | Description                         | Risk Category |
+| ----------- | ----------------------------------- | ------------- |
+| Reset Game  | Clears score and progress instantly |               |
+| Leaderboard | Stores top 3 scores in localStorage |               |
+| Bonus Round | Every 3 puzzles → doubles score     |               |
 
 ## Test Plan
 
 ### Objectives
-- Verify that the product filtering system functions correctly based on user input
-- Ensure that UI states transition properly (Results, No Results, Reset).
-- Identify and report functional defects impacting user experience or correctness
-  
+
+Verify that the product filtering system functions correctly based on user input
+Ensure that UI states transition properly (Results, No Results, Reset).
+Identify and report functional defects impacting user experience or correctness
+
+-
 
 ### Scope
 
 **In Scope:**
+
 - Input validation behavior
 - UI response/messages for valid and invalid searches
 - Reset/Clear functionality
 
 **Out of Scope:**
+
 - System behavior across identified states
 - Backend database performance
 - Mobile responsiveness
@@ -61,50 +65,51 @@
 - Test data sheet
 - Browser (Chrome / Firefox)
 - Manual Black-box testing techniques:
-    - Equivalence Partitioning
-    - Boundary Value Analysis
-    - Decision Table Testing
+  - Equivalence Partitioning
+  - Boundary Value Analysis
+  - Decision Table Testing
 - Defect tracking sheet
-State Transition Testing
+  State Transition Testing
 
 ### Schedule
 
-| Phase | Planned Duration | Actual Duration | Status |
-|-------|------------------|-----------------|--------|
-|Test Planning |1 Day | 8 hours| completed|
-|Risk analyst | 1 day| 5 hours | Completed |
-| Test Executor| 2 day | | in progress|
-| Defect Reporting| Continuous during execution| |In progress|
-|Final Review & Closure | 1 day| | pending|
+| Phase                  | Planned Duration            | Actual Duration | Status      |
+| ---------------------- | --------------------------- | --------------- | ----------- |
+| Test Planning          | 1 Day                       | 8 hours         | completed   |
+| Risk analyst           | 1 day                       | 5 hours         | Completed   |
+| Test Executor          | 2 day                       |                 | in progress |
+| Defect Reporting       | Continuous during execution |                 | In progress |
+| Final Review & Closure | 1 day                       |                 | pending     |
 
 ## Risk Analysis
 
 ### Risks
 
-| ID | Feature | Risk Description | Likelihood | Impact | Priority | Mitigation Strategy |
-|----|---------|------------------|------------|--------|----------|---------------------|
-| R1 | Bonus Round | Bonus round logic may double score too early or fail to trigger after every 3 solves. | Medium | High | High | Verify score updates after every 3 puzzles using boundary test data. Retest with consistent sequences. |
-| R2 | Leaderboard | localStorage may fail to persist or correctly sort top 3 scores. | High | Medium | High | Conduct multiple rounds of scoring; clear cache and revalidate persistence order. |
-| R3 | Reset Game | Reset may not clear hints, scrambled words, or state counters completely. | Medium | Medium | Medium | Observe UI and variables post-reset; confirm full state reinitialization. |
-| R4 | Hint Function | Hint may not deduct 2 points immediately or may allow multiple uses per puzzle. | Medium | High | High | Test hint logic before and after use; confirm deduction and disable repeat hints. |
-| R5 | Input Validation | Blank, mixed-case, or special character inputs may bypass validation or cause unhandled messages. | High | low | Medium | Apply boundary and equivalence tests with empty, numeric, and special-character inputs. |
-| R6 | Message Feedback | Success/failure messages may disappear too quickly or fail to appear under invalid states. | Medium | Medium | Medium | Observe #message updates for timing, clarity, and persistence across all user actions. |
+| ID  | Feature          | Risk Description                                                                                  | Likelihood | Impact | Priority | Mitigation Strategy                                                                                    |
+| --- | ---------------- | ------------------------------------------------------------------------------------------------- | ---------- | ------ | -------- | ------------------------------------------------------------------------------------------------------ |
+| R1  | Bonus Round      | Bonus round logic may double score too early or fail to trigger after every 3 solves.             | Medium     | High   | High     | Verify score updates after every 3 puzzles using boundary test data. Retest with consistent sequences. |
+| R2  | Leaderboard      | localStorage may fail to persist or correctly sort top 3 scores.                                  | High       | Medium | High     | Conduct multiple rounds of scoring; clear cache and revalidate persistence order.                      |
+| R3  | Reset Game       | Reset may not clear hints, scrambled words, or state counters completely.                         | Medium     | Medium | Medium   | Observe UI and variables post-reset; confirm full state reinitialization.                              |
+| R4  | Hint Function    | Hint may not deduct 2 points immediately or may allow multiple uses per puzzle.                   | Medium     | High   | High     | Test hint logic before and after use; confirm deduction and disable repeat hints.                      |
+| R5  | Input Validation | Blank, mixed-case, or special character inputs may bypass validation or cause unhandled messages. | High       | low    | Medium   | Apply boundary and equivalence tests with empty, numeric, and special-character inputs.                |
+| R6  | Message Feedback | Success/failure messages may disappear too quickly or fail to appear under invalid states.        | Medium     | Medium | Medium   | Observe #message updates for timing, clarity, and persistence across all user actions.                 |
 
 ### Risk Coverage
+
 | **Risk ID** | **Covered by Test Case(s)** | **Risk Priority** | **Coverage Status** |
 | ----------- | --------------------------- | ----------------- | ------------------- |
-| R1          | TC-003, TC-006              | High              | ✅ Covered           |
-| R2          | TC-008                      | High              | ✅ Covered           |
-| R3          | TC-007                      | Medium            | ✅ Covered           |
-| R4          | TC-005                      | High              | ✅ Covered           |
-| R5          | TC-004                      | Medium            | ✅ Covered           |
-| R6          | TC-001, TC-002              | Medium            | ✅ Covered           |
+| R1          | TC-003, TC-006              | High              | ✅ Covered          |
+| R2          | TC-008                      | High              | ✅ Covered          |
+| R3          | TC-007                      | Medium            | ✅ Covered          |
+| R4          | TC-005                      | High              | ✅ Covered          |
+| R5          | TC-004                      | Medium            | ✅ Covered          |
+| R6          | TC-001, TC-002              | Medium            | ✅ Covered          |
 
 - Tested Risks: 6
 - Tested Risks Percent: 100%
 - Untested Risks Percent: 0%
 
-### Risk Summary 
+### Risk Summary
 
 As the Risk Analyst, I identified six functional and usability risks centered on logic errors, data persistence, and state control within Word Puzzle Game Plus. The highest risk features Bonus Round, Hint deduction, and Leaderboard storage were given top test priority.
 Mitigation involved black box testing through boundary value analysis, decision table testing, and state transition checks to ensure data integrity and consistent UI behavior.
@@ -112,53 +117,52 @@ Overall, all identified risks were tested and validated, achieving 100% risk cov
 
 ## Test Cases
 
-| **Test ID** | **Feature / Functionality** | **Expected Result** | **Actual Result** | **Status (Pass/Fail)** | **Remarks /  |
-|--------------|-----------------------------|----------------------|--------------------|-------------------------|---------------------------|
-| TC-001 | Page Load | Game loads correctly, all UI elements visible | Works as expected | ✅ Pass |  |
-| TC-002 | New Puzzle | “New Puzzle” button changes scrambled word | Works as expected | ✅ Pass |  |
-| TC-003 | Submit Guess (Correct) | Shows “Correct! +10 points” and updates score | Works as expected | ✅ Pass |  |
-| TC-004 | Submit Guess (Incorrect) | Shows “Incorrect, try again!” | Works as expected | ✅ Pass |  |
-| TC-005 | Hint Use | Deducts 2 points and displays hint | works as expected | ☐ Pass / ☐ Fail |  |
-| TC-006 | Bonus Round | After 3 solves, score doubles | Works correctly | ✅ Pass |  |
-| TC-007 | Reset Game | Resets score, solved count, and clears word | Works as expected | ✅ Pass |  |
-| TC-008 | Leaderboard | Saves top 3 scores in browser | Works as expected | ✅ Pass |  |
-
-
+| **Test ID** | **Feature / Functionality** | **Expected Result**                           | **Actual Result** | **Status (Pass/Fail)** | \*\*Remarks / |
+| ----------- | --------------------------- | --------------------------------------------- | ----------------- | ---------------------- | ------------- |
+| TC-001      | Page Load                   | Game loads correctly, all UI elements visible | Works as expected | ✅ Pass                |               |
+| TC-002      | New Puzzle                  | “New Puzzle” button changes scrambled word    | Works as expected | ✅ Pass                |               |
+| TC-003      | Submit Guess (Correct)      | Shows “Correct! +10 points” and updates score | Works as expected | ✅ Pass                |               |
+| TC-004      | Submit Guess (Incorrect)    | Shows “Incorrect, try again!”                 | Works as expected | ✅ Pass                |               |
+| TC-005      | Hint Use                    | Deducts 2 points and displays hint            | works as expected | ☐ Pass / ☐ Fail        |               |
+| TC-006      | Bonus Round                 | After 3 solves, score doubles                 | Works correctly   | ✅ Pass                |               |
+| TC-007      | Reset Game                  | Resets score, solved count, and clears word   | Works as expected | ✅ Pass                |               |
+| TC-008      | Leaderboard                 | Saves top 3 scores in browser                 | Works as expected | ✅ Pass                |               |
 
 ## Defects
 
-| ID | Issue Title | Severity | Risk ID | Status | GitHub Link |
-|----|-------------|----------|---------|--------|-------------|
-| | | | | | |
+| ID  | Issue Title | Severity | Risk ID | Status | GitHub Link |
+| --- | ----------- | -------- | ------- | ------ | ----------- |
+|     |             |          |         |        |             |
 
 ## Metrics
 
-- Test Case Pass Percent: 
-- Defect Density: 
-- Risk Coverage Percent: 
-- Regression Success Rate: 
+- Test Case Pass Percent:
+- Defect Density:
+- Risk Coverage Percent:
+- Regression Success Rate:
 
 ### Defect Summary
 
-- Total Defects Logged: 
-- Critical High: 
-- Fix Rate: 
+- Total Defects Logged:
+- Critical High:
+- Fix Rate:
 
 ## Test Control & Project Management
 
 ### Phases
 
-| Phase | Deliverable | Actual Output | Variance | Owner |
-|-------|-------------|---------------|----------|-------|
-|Test Planning |Approved Test Plan |Completed on time|None |Test manager |
-|Risk Analyst |Risk Analysis | Minor adjustments made|+1 extra day |Risk Analyst |
-|Test Execution | Test Results, Defect Reports| |defects pending |Test Executor |
-|Test Closure |Test Summary Report | in progress |none |All Members |
+| Phase          | Deliverable                  | Actual Output          | Variance        | Owner         |
+| -------------- | ---------------------------- | ---------------------- | --------------- | ------------- |
+| Test Planning  | Approved Test Plan           | Completed on time      | None            | Test manager  |
+| Risk Analyst   | Risk Analysis                | Minor adjustments made | +1 extra day    | Risk Analyst  |
+| Test Execution | Test Results, Defect Reports |                        | defects pending | Test Executor |
+| Test Closure   | Test Summary Report          | in progress            | none            | All Members   |
 
-**Progress Tracking Method:**  
+**Progress Tracking Method:**
+
 - Daily defect reporting and dashboard updates
 - Status tracked using GitHub Issues and Project Board
-**Change Control Notes:**
+  **Change Control Notes:**
 
 ## Lessons Learned
 
@@ -169,18 +173,18 @@ Overall, all identified risks were tested and validated, achieving 100% risk cov
 
 ## Attachments
 
-- 
+-
 
 ## Sign Off
 
-| Name | Role | Initials | Date |
-|------|------|-----------|------|
-| Denis Kyalo | Test Manager | | 24 10 2025|
-| Bramwel Mutugi | Risk Analyst |BM| 26 10 2025 |
-| Gideon Bethwel| Test Executor | |26 10 2025 |
+| Name        | Role          | Initials | Date       |
+| ----------- | ------------- | -------- | ---------- |
+| Denis Kyalo | Test Manager  |          | 24 10 2025 |
+|             | Risk Analyst  |          |            |
+|             | Test Executor |          |            |
 
 ## Overall Summary
 
-**Statement:** 
+**Statement:**
 
 **Test Status:** ☐ In Progress
