@@ -123,7 +123,7 @@ Overall, all identified risks were tested and validated, achieving 100% risk cov
 | TC-002      | New Puzzle                  | “New Puzzle” button changes scrambled word    | Works as expected | ✅ Pass                |               |
 | TC-003      | Submit Guess (Correct)      | Shows “Correct! +10 points” and updates score | Works as expected | ✅ Pass                |               |
 | TC-004      | Submit Guess (Incorrect)    | Shows “Incorrect, try again!”                 | Works as expected | ✅ Pass                |               |
-| TC-005      | Hint Use                    | Deducts 2 points and displays hint            | works as expected | ☐ Pass / ☐ Fail        |               |
+| TC-005      | Hint Use                    | Deducts 2 points and displays hint            | works as expected | ✅ Pass|               |
 | TC-006      | Bonus Round                 | After 3 solves, score doubles                 | Works correctly   | ✅ Pass                |               |
 | TC-007      | Reset Game                  | Resets score, solved count, and clears word   | Works as expected | ✅ Pass                |               |
 | TC-008      | Leaderboard                 | Saves top 3 scores in browser                 | Works as expected | ✅ Pass                |               |
@@ -185,12 +185,19 @@ Overall, all identified risks were tested and validated, achieving 100% risk cov
 
 | Name        | Role          | Initials | Date       |
 | ----------- | ------------- | -------- | ---------- |
-| Denis Kyalo | Test Manager  |          | 24 10 2025 |
+| Denis Kyalo | Test Manager  | DK      | 24 10 2025 |
 | Bramwel Mutugi | Risk Analyst  |  BM        | 26th Oct 2025       |
 | Gideon Bethuel  | Test Executor | GB       | 27th Oct 2025      |
 
 ## Overall Summary
 
 **Statement:**
+- write one paragraph The Word Puzzle Game Plus was tested using a structured Test Plan focused on core gameplay functionality, UI state transitions, scoring rules, and data persistence features. Testing was performed using manual black-box methods including Equivalence Partitioning, Boundary Value Analysis, Decision Table Testing, and State Transition Testing on a desktop Chrome environment. High-risk features such as Bonus Round scoring and Leaderboard storage received focused attention based on the Risk Analysis.
 
-**Test Status:** ☐ In Progress
+- All six identified risks were fully tested, resulting in 100% risk coverage, ensuring confidence in critical gameplay areas. A total of eight main test cases were executed, with most passing successfully. Five defects were logged overall, including two high-severity issues affecting score doubling and immediate leaderboard updates. One defect has been fixed, while the remaining issues primarily impact user experience rather than core functionality.
+
+- Project tracking was maintained through GitHub Issues and a Project Board, allowing continuous monitoring of progress. Communication among team members remained effective, and change control helped track UI and validation improvements. Future cycles will focus on automating key test cases, improving validation behavior, and enhancing usability on smaller screens.
+
+- Overall, the testing effort confirmed that the game largely performs as expected, with clear improvement opportunities before final release.
+
+**Test Status:** ✅ Completed
