@@ -179,7 +179,7 @@ Overall, all identified risks were tested and validated, achieving 100% risk cov
 
 | Name        | Role          | Initials | Date       |
 | ----------- | ------------- | -------- | ---------- |
-| Denis Kyalo | Test Manager  |          | 24 10 2025 |
+| Denis Kyalo | Test Manager  | DK      | 24 10 2025 |
 | Bramwel Mutugi | Risk Analyst  |  BM        | 26th Oct 2025       |
 | Gideon Bethuel  | Test Executor | GB       | 27th Oct 2025      |
 
@@ -194,4 +194,4 @@ Overall, all identified risks were tested and validated, achieving 100% risk cov
 
 - Overall, the testing effort confirmed that the game largely performs as expected, with clear improvement opportunities before final release.
 
-**Test Status:** ☐ In Progress
+**Test Status:** ✅ Completed
