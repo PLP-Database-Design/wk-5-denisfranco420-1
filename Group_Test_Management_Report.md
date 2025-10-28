@@ -132,6 +132,13 @@ Overall, all identified risks were tested and validated, achieving 100% risk cov
 
 | ID  | Issue Title | Severity | Risk ID | Status | GitHub Link |
 | --- | ----------- | -------- | ------- | ------ | ----------- |
+|  D-001   |  Bonus round not triggering after 3 solves            |     High     |     R1    |  🟡 Open      |  Description: When a hint was used in any of the three rounds, the bonus trigger did not activate → score didn’t double.
+Expected: Score should double every 3 correct puzzles.
+Actual: Score increased normally without bonus.  |         
+|     |             |          |         |        |             |
+|     |             |          |         |        |             |
+|     |             |          |         |        |             |
+|     |             |          |         |        |             |
 |     |             |          |         |        |             |
 
 ## Defect Metrics
