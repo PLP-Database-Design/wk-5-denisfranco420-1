@@ -123,7 +123,7 @@ Overall, all identified risks were tested and validated, achieving 100% risk cov
 | TC-002      | New Puzzle                  | “New Puzzle” button changes scrambled word    | Works as expected | ✅ Pass                |               |
 | TC-003      | Submit Guess (Correct)      | Shows “Correct! +10 points” and updates score | Works as expected | ✅ Pass                |               |
 | TC-004      | Submit Guess (Incorrect)    | Shows “Incorrect, try again!”                 | Works as expected | ✅ Pass                |               |
-| TC-005      | Hint Use                    | Deducts 2 points and displays hint            | works as expected | ☐ Pass / ☐ Fail        |               |
+| TC-005      | Hint Use                    | Deducts 2 points and displays hint            | works as expected | ✅ Pass|               |
 | TC-006      | Bonus Round                 | After 3 solves, score doubles                 | Works correctly   | ✅ Pass                |               |
 | TC-007      | Reset Game                  | Resets score, solved count, and clears word   | Works as expected | ✅ Pass                |               |
 | TC-008      | Leaderboard                 | Saves top 3 scores in browser                 | Works as expected | ✅ Pass                |               |
