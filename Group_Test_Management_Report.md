@@ -31,9 +31,9 @@
 
 | Feature     | Description                         | Risk Category |
 | ----------- | ----------------------------------- | ------------- |
-| Reset Game  | Clears score and progress instantly |               |
-| Leaderboard | Stores top 3 scores in localStorage |               |
-| Bonus Round | Every 3 puzzles → doubles score     |               |
+| Reset Game  | Clears score and progress instantly |      high         |
+| Leaderboard | Stores top 3 scores in localStorage |   medium            |
+| Bonus Round | Every 3 puzzles → doubles score     |    high           |
 
 ## Test Plan
 
