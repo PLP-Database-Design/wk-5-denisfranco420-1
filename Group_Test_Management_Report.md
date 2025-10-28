@@ -142,7 +142,7 @@ Overall, all identified risks were tested and validated, achieving 100% risk cov
 ## Defect Metrics
 | **Metric**              | **Formula**                         | **Result** |
 | ----------------------- | ----------------------------------- | ---------- |
-| Test Case Pass %        | (7 / 8) × 100                       | **87.5%**  |
+| Test Case Pass %        | (8 / 8) × 100                       | **100%**  |
 | Defect Density          | 5 defects / 8 test cases  |        **0.63**    |
 | Risk Coverage           | (6 / 6) × 100                       | **100%**   |
 | Regression Success Rate | Estimated after re-test             | Pending    |
@@ -150,16 +150,16 @@ Overall, all identified risks were tested and validated, achieving 100% risk cov
 
 ### Defect Summary
 
-| **Metric**               | **Value**       |
-| ------------------------ | --------------- |
-Total Defects Logged: 5 
-Critical / High Severity Defects: 2 (D-001, D-003) 
-Medium Severity Defects: 2 (D-002, D-004) 
-Low Severity Defects: 1 (D-005) 
-Defects Fixed: 1 (D-003) 
-Defects Remaining Open: 4 (D-001, D-002, D-004, D-005) 
-Fix Rate: 20% (1 out of 5 defects fixed)
-🔍 Summary Analysis 
+- Total Defects Logged: 5 
+- Critical / High Severity Defects: 2 (D-001, D-003) 
+- Medium Severity Defects: 2 (D-002, D-004) 
+- Low Severity Defects: 1 (D-005) 
+- Defects Fixed: 1 (D-003) 
+- Defects Remaining Open: 4 (D-001, D-002, D-004, D-005) 
+- Fix Rate: 20% (1 out of 5 defects fixed)
+
+## 🔍 Summary Analysis 
+
 - During testing of the Word Puzzle Game Plus, a total of five defects were identified across gameplay logic, UI responsiveness, and validation handling. 
 - Two issues were categorized as high severity, affecting core scoring and user interactions. 
 Only one defect (D-003) has been successfully resolved, improving hint logic stability.
