@@ -160,12 +160,26 @@ Note: Timeout currently 3s.         |
 
 | **Metric**               | **Value**       |
 | ------------------------ | --------------- |
-| Total Defects Logged     | 5               |
-| Critical / High Severity | 2               |
-| Medium Severity          | 2               |
-| Low Severity             | 1               |
-| Fix Rate                 | 20% (1/5 fixed) |
+Total Defects Logged: 5 
+Critical / High Severity Defects: 2 (D-001, D-003) 
+Medium Severity Defects: 2 (D-002, D-004) 
+Low Severity Defects: 1 (D-005) 
+Defects Fixed: 1 (D-003) 
+Defects Remaining Open: 4 (D-001, D-002, D-004, D-005) 
+Fix Rate: 20% (1 out of 5 defects fixed)
+🔍 Summary Analysis 
+- During testing of the Word Puzzle Game Plus, a total of five defects were identified across gameplay logic, UI responsiveness, and validation handling. 
+- Two issues were categorized as high severity, affecting core scoring and user interactions. 
+Only one defect (D-003) has been successfully resolved, improving hint logic stability.
 
+- The remaining open issues are primarily related to bonus round logic, leaderboard updates, and mobile message timing. 
+- These do not prevent gameplay but impact overall user experience and score accuracy.
+  ⚙️ Recommendations
+  - Prioritize fixes for high-severity issues (D-001, D-002) before final submission to ensure gameplay reliability.
+  - Validate UI refresh logic post-reset to ensure leaderboard accuracy.
+  - Enhance input validation to handle blank guesses.
+  - Adjust UI timing for better visibility on smaller screens.
+  - Conduct full regression testing after implementing the fixes.
 ## Test Control & Project Management
 
 ### Phases
