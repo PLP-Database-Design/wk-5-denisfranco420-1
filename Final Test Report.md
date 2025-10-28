@@ -180,8 +180,8 @@ Overall, all identified risks were tested and validated, achieving 100% risk cov
 | Name        | Role          | Initials | Date       |
 | ----------- | ------------- | -------- | ---------- |
 | Denis Kyalo | Test Manager  |          | 24 10 2025 |
-|             | Risk Analyst  |          |            |
-|             | Test Executor |          |            |
+| Bramwel Mutugi | Risk Analyst  |  BM        | 26th Oct 2025       |
+| Gideon Bethuel  | Test Executor | GB       | 27th Oct 2025      |
 
 ## Overall Summary
 
