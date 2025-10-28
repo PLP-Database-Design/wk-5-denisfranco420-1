@@ -134,18 +134,24 @@ Overall, all identified risks were tested and validated, achieving 100% risk cov
 | --- | ----------- | -------- | ------- | ------ | ----------- |
 |     |             |          |         |        |             |
 
-## Metrics
+## Defect Metrics
+| **Metric**              | **Formula**                         | **Result** |
+| ----------------------- | ----------------------------------- | ---------- |
+| Test Case Pass %        | (7 / 8) × 100                       | **87.5%**  |
+| Defect Density          | 5 defects / 8 test cases  |        **0.63**    |
+| Risk Coverage           | (6 / 6) × 100                       | **100%**   |
+| Regression Success Rate | Estimated after re-test             | Pending    |
 
-- Test Case Pass Percent:
-- Defect Density:
-- Risk Coverage Percent:
-- Regression Success Rate:
 
 ### Defect Summary
 
-- Total Defects Logged:
-- Critical High:
-- Fix Rate:
+| **Metric**               | **Value**       |
+| ------------------------ | --------------- |
+| Total Defects Logged     | 5               |
+| Critical / High Severity | 2               |
+| Medium Severity          | 2               |
+| Low Severity             | 1               |
+| Fix Rate                 | 20% (1/5 fixed) |
 
 ## Test Control & Project Management
 
