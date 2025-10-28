@@ -132,19 +132,11 @@ Overall, all identified risks were tested and validated, achieving 100% risk cov
 
 | ID  | Issue Title | Severity | Risk ID | Status | GitHub Link |
 | --- | ----------- | -------- | ------- | ------ | ----------- |
-|  D-001   |  Bonus round not triggering after 3 solves            |     High     |     R1    |  🟡 Open      |  -Description: When a hint was used in any of the three rounds, the bonus trigger did not activate → score didn’t double.
--Expected: Score should double every 3 correct puzzles.
--Actual: Score increased normally without bonus.  |         
-|   D002  |   Leaderboard not updating after Reset          |  Medium        |   R2      |   🟡 Open     |  - Description: Leaderboard remained unchanged after clicking Reset.
--Evidence: localStorage updated, but DOM display remained stale.
--Expected: Leaderboard should update instantly.          |
-| D003    |   Hint button can be clicked twice before state update          |  high       |    R3   |    🟢 Fixed    |Description: Double-clicking Hint deducted points twice before state lock.
-Fix: Added boolean check to prevent multiple deductions.|
-| D004     |   Empty input triggers “Incorrect” instead of validation          |   Medium       |      R4   |    🟡 Open     |      Description: Blank guesses show incorrect feedback instead of a validation warning.
-Expected: Proper validation message for empty input.       |
-|  D-005   |   Message feedback disappears too quickly on mobile          |    low       |     R5    |   🟡 Open     |    Description: Messages fade too fast on small screens.
-Expected: Visibility duration long enough for readability.
-Note: Timeout currently 3s.         |
+|  D-001   |  Bonus round not triggering after 3 solves            |     High     |     R1    |  🟡 Open      |  https://github.com/PLP-Database-Design/wk-5-denisfranco420-1/issues/2#issue-3560616767  |         
+|   D-002  |   Leaderboard not updating after Reset          |  Medium        |   R2      |   🟡 Open     |  https://github.com/PLP-Database-Design/wk-5-denisfranco420-1/issues/3#issue-3560624212          |
+| D-003    |   Hint button can be clicked twice before state update          |  high       |    R3   |    🟢 Fixed    |https://github.com/PLP-Database-Design/wk-5-denisfranco420-1/issues/4#issue-3560629421|
+| D-004     |   Empty input triggers “Incorrect” instead of validation          |   Medium       |      R4   |    🟡 Open     |      https://github.com/PLP-Database-Design/wk-5-denisfranco420-1/issues/5#issue-3560634354      |
+|  D-005   |   Message feedback disappears too quickly on mobile          |    low       |     R5    |   🟡 Open     |    https://github.com/PLP-Database-Design/wk-5-denisfranco420-1/issues/6#issue-3560639164         |
 
 
 ## Defect Metrics
